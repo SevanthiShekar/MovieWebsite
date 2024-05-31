@@ -1,0 +1,300 @@
+@font-face {
+    font-family: roboto;
+    src: url(RobotoSlab-Medium.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+}
+a{
+    text-decoration:none;
+}
+a:visited 
+{ color: hsl(0, 0%, 67%); }
+
+/*---------------------Navigation Bar---------------------------*/
+nav{
+    background-color:rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+}
+/*---------------------Navigation Bar-Left---------------------------*/
+.sections{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.indi-section{
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.indi-section h3{
+    color: hsl(0, 4%, 80%);
+    font-family: roboto;
+    font-size: 18px;
+}
+
+.indi-section i{
+    color: hsl(0, 4%, 80%);
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.indi-section h3:hover{
+    color: hsl(0, 3%, 88%);
+    font-size: 1.25em;
+}
+
+.indi-section .content{
+    position: absolute;
+    color: hsl(0, 4%, 80%);
+    font-family: roboto;
+    margin-left: 38px;
+    margin-top: 57px;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 15px;
+    background-color:rgb(24, 24, 24);
+    box-shadow: 2px 2px 5px hsla(0, 0%, 60%, 1); 
+    display: none;
+}
+
+.indi-section p{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.indi-section hr{
+    margin-bottom: 5px;
+}
+
+.indi-section:hover .content{ 
+    display: block; 
+}
+
+.indi-section .types{
+    position: absolute;
+    color: hsl(0, 4%, 80%);
+    font-family: roboto;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 15px;
+    background-color:rgb(24, 24, 24);
+    box-shadow: 2px 2px 5px hsla(0, 0%, 60%, 1); 
+    display:none;
+}
+
+#t1{ margin-top: -55px;
+     margin-left: 110px; }
+#t2{ margin-top: -80px;
+     margin-left: 110px; }
+#t3{ margin-top: -80px;
+     margin-left: 125px; }
+#t4{ margin-top: -80px;
+     margin-left: 110px; }
+#t5{ margin-top: -80px;
+     margin-left: 110px; }
+#t6{ margin-top: -80px;
+     margin-left: 110px; } 
+#t7{ margin-top: -80px;
+     margin-left: 110px; }   
+     
+#S1{ margin-top: -55px;
+     margin-left: 125px; }
+#S2{ margin-top: -80px;
+     margin-left: 135px; }
+#S3{ margin-top: -80px;
+     margin-left: 130px; }
+#S4{ margin-top: -80px;
+     margin-left: 155px; }
+#S5{ margin-top: -60px;
+     margin-left: 75px; }
+
+.indi-section .content .subcontent:hover .types{ display: block;}
+.types p:hover{ font-size: 1.25em; color: rgb(29, 210, 23);}
+.types a:hover{ color: rgb(29, 210, 23); }
+.content p:hover { font-size: 1.25em; color: rgb(29, 210, 23);}
+
+/*---------------------Navigation Bar-Right---------------------------*/
+.user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid  hsl(0, 4%, 80%);
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.user-info p{
+    color: hsl(0, 4%, 80%);
+    font-family: roboto;
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
+.item i{
+    color: hsl(0, 4%, 80%);
+    margin: 20px 5px 20px 20px;
+    font-size: 18px;
+}
+.item p{
+    color: hsl(0, 4%, 80%);
+    margin-left: 10px;
+    font-size: 18px;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.user-options{
+    position: absolute;
+    box-shadow: -2px 2px 5px hsla(0, 0%, 60%, 1); 
+    background-color:rgb(24, 24, 24);
+    margin-top: 10px;
+    display: none;
+}
+.Nav-Right:hover .user-options{ display: block;}
+.item p:hover{ text-decoration: underline;}
+
+/*---------------------Title Page---------------------------*/
+.page{
+    display:flex;
+    flex-direction: column;
+}
+.boxes{
+    width: 100%;
+}
+.title-box{
+    height: 540px;
+    text-align: center;
+    color: hsl(0, 0%, 67%);
+}
+.title-box img{
+    width:100%;
+    height: 540px;
+}
+.title{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 525px;
+}
+.title h1{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    animation-name: fadein;
+    animation-duration: 5s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; /*without this it will fade in then disapper. 
+                                     forwards appylies last property ('to' part) when the animation ends
+                                     (meaning it will apply opacity:1).*/
+}
+.title h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 5s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.boweser-box {
+    background-color: hwb(0 0% 100%);
+    height: 1200px;
+}
+.boweser-box img{
+    height: 189px;
+    width: 650px;
+    margin-left: 450px;
+
+}
+.boweser-box h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: hsl(0, 0%, 67%);
+    font-size: 80px;
+    margin-top: 190px;
+    margin-left: 565px;
+}
+.categories button{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 30px;
+    color: hsl(0, 0%, 67%);
+    background-color: #323232;
+    padding: 10px 10px;
+    margin-left: 30px;
+    margin-top: 25px;
+    border: 0;
+    outline:0;
+    border-radius: 10px;
+}
+.categories button:first-child{
+    margin-left: 310px;
+}
+.categories button:hover{
+    background-color: #454545;
+    font-size: 35px;
+}
+.categories a:hover{ color: rgb(234, 232, 232); }
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.footer{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(202, 202, 202);
+    background-color: #000000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer p:nth-child(2)
+{
+    margin-top: 30px;
+}
+i{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+#twitter{ color: #454545;}
+#youtube{ color:red}
+#instagram{ color: rgb(209, 69, 202);}
+#pinterest{ color: crimson}
+#facebook{ color: rgb(0, 98, 255)}

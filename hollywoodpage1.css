@@ -1,0 +1,175 @@
+@font-face {
+    font-family: neon;
+    src: url(hellodenverdisplayregular_v1.6.ttf);
+}
+@font-face {
+    font-family: barlow;
+    src: url(BarlowCondensed-Medium.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(RobotoSlab-Medium.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{ text-decoration: none; }
+a:visited{ color:#fff7f7;}
+a:hover{ color:#9af631; font-size: 1.1em;}
+body{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    background-image: url(mvr_images/bgimg.jpg);
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: scroll;  
+    background-size: cover;
+}
+.heading{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.neon-wrapper {
+    box-shadow:
+    0 0 0.1vw  0.4vw #fff7f7,   
+    0 0 0.4vw  0.6vw #e97272, 
+    0 0   4vw  0.4vw #e50b0b,
+  
+    inset 0 0 1.5vw  0.4vw rgb(229, 11, 11),
+    inset 0 0 0.4vw  0.2vw #e97272,
+    inset 0 0 0.5vw  0.2vw #fff7f7;
+    border-radius: 1.5rem;
+  }
+.neon-text {
+    font-family: neon;
+    font-size: 50px;
+    color: white;
+    padding: 0 3.5rem 0 3.5rem;
+    text-shadow: 
+    .1vw 0vw .25vw hsl(0, 100%, 92%), .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+  
+    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f35959, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+    .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+}
+.container{
+    width:100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+.img-container{
+    width:100%;
+    height:600px;
+    position: absolute;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:1s;
+    margin-top: 20px;
+}
+.slide-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+img{
+    position: relative;
+    height: 370px;
+    width: 240px;
+    transition: 0.5s;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.button:hover{
+    background-color: rbga(0, 0, 0, 0.2);
+}
+#slider1:target ~ .img-container #img1, #slide_1:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider2:target ~ .img-container #img2, #slide_2:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider3:target ~ .img-container #img3, #slide_3:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider4:target ~ .img-container #img4, #slide_4:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider5:target ~ .img-container #img5, #slide_5:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider6:target ~ .img-container #img6, #slide_6:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider7:target ~ .img-container #img7, #slide_7:target ~ .img-container #button{
+    width: 310px;
+    height: 480px;
+}
+#slider1:target ~ .img-container{
+    left: 60%;
+}
+#slider2:target ~ .img-container{
+    left: 40%;
+}
+#slider3:target ~ .img-container{
+    left: 20%;
+}
+#slider4:target ~ .img-container{
+    left: 0%;
+}
+#slider5:target ~ .img-container{
+    left: -20%;
+}
+#slider6:target ~ .img-container{
+    left: -40%;
+}
+#slider7:target ~ .img-container{
+    left: -60%;
+}
+.movie-info{
+    padding: 10px 10px;
+    margin-top: 10px;
+    color:#fff7f7;
+}
+.movie-info h3{
+    font-family: roboto;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.movie-info p{
+    font-family: roboto;
+    font-size: 13px;
+}
