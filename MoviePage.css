@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: roboto;
-    src: url(RobotoSlab-Medium.ttf);
+    src: url(Fonts/RobotoSlab-Medium.ttf);
 }
 
 *{
@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 body{
-    background-image: url(mvr_images/bgimg.jpg);
+    background-image: url(Images/bgimg.jpg);
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: scroll;  

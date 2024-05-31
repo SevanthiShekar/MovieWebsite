@@ -1,14 +1,14 @@
 @font-face {
     font-family: neon;
-    src: url(hellodenverdisplayregular_v1.6.ttf);
+    src: url(Fonts/hello-denver-display.denver-display-bold-bold-regular.ttf);
 }
 @font-face {
     font-family: barlow;
-    src: url(BarlowCondensed-Medium.ttf);
+    src: url(Fonts/BarlowCondensed-Medium.ttf);
 }
 @font-face {
     font-family: roboto;
-    src: url(RobotoSlab-Medium.ttf);
+    src: url(Fonts/RobotoSlab-Medium.ttf);
 }
 *{
     margin: 0px;
@@ -23,7 +23,7 @@ body{
     flex-direction: column;
     align-items: center;
     overflow:hidden;
-    background-image: url(mvr_images/bgimg.jpg);
+    background-image: url(Images/bgimg.jpg);
     background-repeat: no-repeat; 
     background-position: center; 
     background-attachment: scroll;  
